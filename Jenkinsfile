@@ -7,6 +7,11 @@ tools {
     maven 'Maven'
 }
 
+environment {
+    JAVA_HOME = 'C:\\Program Files\\Java\\jdk-25.0.2'
+    PATH = "${env.JAVA_HOME}\\bin;${env.PATH}"
+}
+
 stages {
     stage('Checkout') {
         steps {
